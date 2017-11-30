@@ -1,0 +1,99 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+
+body{
+	background: url(../img/admin-re-bg.jpg);
+	background-size: 1400px 1000px;
+}
+.box{
+			width: 580px;
+			height: 530px;
+			position: absolute;
+			top: 130px;
+			left: 350px;
+			background-color:#ffffff;
+			padding: 0 40px;
+		}
+		.box h1{
+			width: 500px;
+			height: 97px;
+		}
+		.box h1 a span{
+			display: none;
+		}
+		.box h1 a{
+			
+			display: block;
+			width: 150px;
+			height: 100%;
+			background: url(../img/logo_login.png) no-repeat 0 15px;
+		}
+		.box .p1{
+			height: 57px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		.box .p1 .sp1{
+			font-size:37px;
+			color: #333333;
+		}
+		.box .p1 .sp2{
+			font-size: 15px;
+			color: #333333;
+		}
+		.box .p1 .sp2 a{
+			color: #fd7400;
+		}
+		.box .p2{
+			height: 205px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		.box .p2 div{
+			height: 53px;
+			width: 500px;
+		}
+		.box .p2 .in{
+			background: #aaaaaa url(../img/register_01.png) no-repeat 14px 14px;
+		}
+		.box .p2 .passwd,.box .p2 .re_passwd{
+			background: #aaaaaa url(../img/register_02.png) no-repeat 14px 14px;
+		}
+		.sp3,.sp4{
+			width: 56px;
+			height: 53px;
+			display: block;
+			float: left;
+		}
+		.box .p2 input{
+			width: 444px;
+			height: 53px;
+		}
+		
+		.box .login #btn{
+			display: block;
+			width: 500px;
+			height: 53px;
+			text-align: center;
+			line-height: 53px;
+			background: #fd7400;
+			cursor: pointer;
+			border: none;
+			margin-top: 30px;
+		}
+		#pandu{
+			width: 70px;
+			height: 20px;
+			position: absolute;
+			top: 16px;
+			left: 210px;
+			color: red;
+		}

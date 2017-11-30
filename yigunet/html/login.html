@@ -4,133 +4,7 @@
 		<meta charset="UTF-8">
 		<title></title>
 	</head>
-	<style type="text/css">
-		*{
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-		}
-		a{
-			text-decoration: none;
-		}
-	
-		body{
-			background: url(../img/admin-bg.jpg);
-			background-size:1280px 990px;
-			position: relative;
-		}
-		.box{
-			width: 580px;
-			height: 530px;
-			position: absolute;
-			top: 130px;
-			left: 350px;
-			background-color: rgba(139,140,144,.3);
-			padding: 0 40px;
-		}
-		.box h1{
-			width: 500px;
-			height: 97px;
-		}
-		.box h1 a span{
-			display: none;
-		}
-		.box h1 a{
-			
-			display: block;
-			width: 150px;
-			height: 100%;
-			background: url(../img/logo_login.png) no-repeat 0 15px;
-		}
-		.box .p1{
-			height: 57px;
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-		}
-		.box .p1 .sp1{
-			font-size:37px;
-			color: white;
-		}
-		.box .p1 .sp2{
-			font-size: 15px;
-			color: white;
-		}
-		.box .p1 .sp2 a{
-			color: #fd7400;
-		}
-		.box .p2{
-			height: 128px;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-		}
-		.box .p2 div{
-			height: 53px;
-			width: 500px;
-		}
-		.box .p2 .in{
-			background: #aaaaaa url(../img/register_01.png) no-repeat 14px 14px;
-		}
-		.box .p2 .passwd{
-			background: #aaaaaa url(../img/register_02.png) no-repeat 14px 14px;
-		}
-		.sp3,.sp4{
-			width: 56px;
-			height: 53px;
-			display: block;
-			float: left;
-		}
-		.box .p2 input{
-			width: 444px;
-			height: 53px;
-		}
-		.box .p3{
-			height: 50px;
-			margin: 25px 0;
-			position: relative;
-		}
-		.box .p3 .sp5{
-			display: block;
-			width: 56px;
-			line-height: 50px;
-			text-align: center;
-			font-size: 15px;
-			float: left;
-			color: white;
-		}
-		.box .p3 input{
-			display: block;
-			width: 222px;
-			height: 100%;
-			float: left;
-		}
-		.box .p3 img{
-			display: block;
-			height: 100%;
-			width: 200px;
-			float: left;
-			margin-left: 10px;
-		}
-		.box .login #btn{
-			display: block;
-			width: 500px;
-			height: 53px;
-			text-align: center;
-			line-height: 53px;
-			background: #fd7400;
-			cursor: pointer;
-			border: none;
-		}
-		#pandu{
-			width: 70px;
-			height: 20px;
-			position: absolute;
-			top: 16px;
-			left: 210px;
-			color: red;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="../css/login.css"/>
 	<body>
 		
 		
@@ -146,7 +20,7 @@
 			</span>
 			<span class="sp2">
 				还没有账号？
-				<a href="">注册</a>
+				<a href="register.html">注册</a>
 			</span>
 		</div>
 		<div class="p2">
@@ -172,50 +46,7 @@
 		</div>
 	</div>
 	
-	<script src="../js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
-	<script>
-		// 生成验证码
-		function yanZm(){
-				$.ajax({
-						type:"get",
-						url: "http://route.showapi.com/932-2" ,
-						data:{
-							showapi_appid:"49960",
-							showapi_sign:"093a944db44b431aa6640bf0f31bca4e"
-						},
-						dataType:"json",
-						success:function(data){
-							var img = data.showapi_res_body;
-							$("#gen_code").attr("src",img.image);
-							$("#gen_code").attr("sid",img.sid) ;
-						}
-				});
-			}
-			
-			yanZm();
-			$("#gen_code").on("click",yanZm);
-			$("#input_code").on("blur",function(){
-				$.ajax({
-					type:"get",
-						url: "http://route.showapi.com/932-1" ,
-						data:{
-							showapi_appid:"49960",
-							showapi_sign:"093a944db44b431aa6640bf0f31bca4e",
-							checkcode : $("#input_code").val(),
-							sid:$("#gen_code").attr("sid")
-						},
-						dataType:"json",
-						success:function(data){
-							if (data.showapi_res_body.valid) {
-								$("#pandu").text("正确");
-							}else{
-								$("#pandu").text("验证错误");
-								}
-								
-						}
-						
-				});
-			})
-		</script>
+	<script src="../lib/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/login.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>
