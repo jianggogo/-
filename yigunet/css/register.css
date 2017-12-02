@@ -6,7 +6,9 @@
 a{
 	text-decoration: none;
 }
-
+html,body{
+	width: 100%;
+}
 body{
 	background: url(../img/admin-re-bg.jpg);
 	background-size: 1400px 1000px;

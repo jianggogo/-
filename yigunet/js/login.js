@@ -15,7 +15,7 @@
 						}
 				});
 			}
-			
+	
 			yanZm();
 			$("#gen_code").on("click",yanZm);
 			$("#input_code").on("blur",function(){
@@ -28,6 +28,7 @@
 							checkcode : $("#input_code").val(),
 							sid:$("#gen_code").attr("sid")
 						},
+						
 						dataType:"json",
 						success:function(data){
 							if (data.showapi_res_body.valid) {

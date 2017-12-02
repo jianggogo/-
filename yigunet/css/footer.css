@@ -1,0 +1,162 @@
+*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			ul li{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+			}
+			.promis{
+				height: 97px;
+				background: #fd7400;
+			}
+			.promis .box{
+				height: 92px;
+				width: 100%;
+				padding: 0 20px;
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+			}
+			.promis .box dl{
+				width: 204px;
+				height: 50px;
+				display: flex;
+			}
+			.promis .box dl dd{
+				font-size: 13px;
+				color: white; 
+			}
+			.promis .box dl dd span{
+				font-size: 12px;
+			}
+			.tellYou{
+				height: 200px;
+				margin-top: 15px;
+				background: #ffffff;
+			}
+			.tellYou .box{
+				height: 200px;
+				width: 100%;
+				padding: 0 20px;
+				
+			}
+			.tellYou .box .word{
+				width: 809px;
+				height: 158px;
+				border: 1px solid #cccccc;
+				padding-left: 15px;
+				float: left;
+			}	
+			.tellYou .box .word h4{
+				width: 714px;
+				height: 37px;
+				line-height: 37px;
+				font-size: 13px;
+				color: #333333;
+			}
+			.tellYou .box .word dl{
+				display: flex;
+				
+			}	
+			.tellYou .box .word dl dd{
+				font-size: 12px;
+				color: #333333;
+			}
+			.tellYou .box .tuP{
+				width: 236px;
+				height: 200px;
+				float: left;
+				margin-left: 100px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+			.links{
+				height: 170px;
+				background: #ffffff;
+				border-bottom:1px solid #d9d9d9;
+			}
+			.links .box{
+				height: 170px;
+				width: 100%;
+				padding: 0 20px;
+			}
+			.links .box .lianJie{
+				float: left;
+				width: 850px;
+				height: 171px;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+			}
+			.links .box .lianJie ul{
+				font-size: 12px;
+			}
+			.links .box .lianJie ul .li1{
+				font-size: 13px;
+				font-weight: 700;
+			}
+			.links .box .erWeiM{
+				float: left;
+				width: 330px;
+				height: 115px;
+				margin-top: 36px;
+				display: flex;
+				justify-content: space-around;
+				align-content: center;
+				font-size: 13px;
+			}
+			.links .box .erWeiM img{
+				width: 80px;
+				height: 78px;
+			}
+			.friLink{
+				height: 28px;
+				background: #ffffff;
+			}
+			.friLink .box{
+				width: 100%;
+				height: 28px;
+			}
+			.friLink .box ul{
+				width: 547px;
+				height: 28px;
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-between;
+				font-size: 12px;
+				align-items: center;
+			}
+			.friLink .box ul a{
+				color: black;
+			}
+			
+			.footer_end{
+				height: 106px;
+				background: #ffffff;
+			}
+			.footer_end .box{
+				height: 106px;
+				width: 100%;
+			}
+			.footer_end .box .gongZh{
+				width: 653px;
+				height: 54px;
+				margin: 0 auto;
+			line-height: 54px;
+			}
+			.footer_end .box .gongZh img{
+				width: 102px;
+				height: 38px;
+			}
+			.footer_end .box .banQuan{
+				margin: 0 auto;
+				width: 753px;
+				text-align: center;
+				height: 52px;
+				font-size: 12px
+			}
