@@ -10,7 +10,7 @@ html,body{
 	width: 100%;
 }
 body{
-	background: url(../img/admin-re-bg.jpg);
+	background: url(/yigunet/img/admin-re-bg.jpg);
 	background-size: 1400px 1000px;
 }
 .box{
@@ -34,7 +34,7 @@ body{
 			display: block;
 			width: 150px;
 			height: 100%;
-			background: url(../img/logo_login.png) no-repeat 0 15px;
+			background: url(/yigunet/img/logo_login.png) no-repeat 0 15px;
 		}
 		.box .p1{
 			height: 57px;
@@ -58,16 +58,17 @@ body{
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
+			position: relative;
 		}
 		.box .p2 div{
 			height: 53px;
 			width: 500px;
 		}
 		.box .p2 .in{
-			background: #aaaaaa url(../img/register_01.png) no-repeat 14px 14px;
+			background: #aaaaaa url(/yigunet/img/register_01.png) no-repeat 14px 14px;
 		}
 		.box .p2 .passwd,.box .p2 .re_passwd{
-			background: #aaaaaa url(../img/register_02.png) no-repeat 14px 14px;
+			background: #aaaaaa url(yigunet/img/register_02.png) no-repeat 14px 14px;
 		}
 		.sp3,.sp4{
 			width: 56px;
@@ -79,7 +80,15 @@ body{
 			width: 444px;
 			height: 53px;
 		}
-		
+		#username_info{
+			
+			width: 120px;
+			height: 20px;
+			position: absolute;
+			top: 208px;
+			left: 95px;
+			
+		}
 		.box .login #btn{
 			display: block;
 			width: 500px;

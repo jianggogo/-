@@ -7,8 +7,11 @@
 	</head>
 	<body>
 		<div class="box">
+		<di id="username_info">
+			
+		</di>			
 		<h1>
-			<a href="">
+			<a href="/yigunet/index.html">
 				<span>依谷依谷</span>		
 			</a>
 		</h1>
@@ -24,15 +27,16 @@
 		<div class="p2">
 			<div class="in">
 				<span class="sp3"></span>
-				<input type="text" name="" id="" value="" placeholder="  用户名" />
+				<input type="text" name="" id="username" value="" placeholder="  用户名" />
+				
 			</div>
 			<div class="passwd">
 				<span class="sp4"></span>
-				<input type="password" name="" id="" value="" placeholder="  密码" />
+				<input type="password" name="" id="password" value="" placeholder="  密码" />
 			</div>
 			<div class="re_passwd">
 				<span class="sp4"></span>
-				<input type="password" name="" id="" value="" placeholder="  确认密码" />
+				<input type="password" name="" id="password_reput" value="" placeholder="  确认密码" />
 			</div>
 		</div>
 		
@@ -40,5 +44,51 @@
 			<input type="button" name="" id="btn" value="完成" />
 		</div>
 	</div>
+	
+			<script src="../lib/jquery/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+			<script type="text/javascript">
+				var isUsernameExist = true; // 标记用户名是否存在 true:存在   false:不存在
+				$("#username").on("blur",function(){
+						/* 使用ajax动态验证用户名是否已存在 */
+					$.ajax({
+						type : "get",
+						url : "/yigunet/php/check.php",
+						data : {username : $(this).val()},
+						dataType : "json",
+						success : function(respData){
+							if (respData.status === 1){
+							
+								$("#username_info").text("用户名已被占用");
+								isUsernameExist = true;
+							} else {
+								$("#username_info").text("用户名可用");
+								isUsernameExist = false;
+							}
+						}
+					});
+				})
+				
+				$("#btn").on("click",function(){
+					if (!isUsernameExist) {
+						/* 通过ajax向服务器发送注册用户信息，保存注册用户 */
+						$.ajax({
+							type : "post",
+							url : "/yigunet/php/register.php",
+							data : {
+								username : $("#username").val(),
+								password : $("#password").val()
+							},
+							dataType : "json",
+							success : function(data){
+								if (data.status === 1 && $("#password").val()===$("#password_reput").val()) { // 注册成功
+									location = "/yigunet/html/login.html";
+								} else {
+									$("#username_info").text("注册失败，请稍候重试");
+								}
+							}
+						});
+					}
+				})
+			</script>
 	</body>
 </html>

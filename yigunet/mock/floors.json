@@ -5,28 +5,28 @@
 		{
 			"title" : "橘子们",
 			"products" : [
-				{"id":1,"img" : "/img/201501041330763033.jpg", "title":"商品1", "price":110},
-				{"id":2,"img" : "/img/201711091428172020.jpg", "title":"商品2", "price":210},
-				{"id":3,"img" : "/img/201711241718932003.jpg", "title":"商品3", "price":310},
-				{"id":4,"img" : "/img/201711211056647044.jpg", "title":"商品3", "price":310}
+				{"id":1,"img" : "/yigunet/img/201711211719598048.jpg", "title":"特供安西脐橙礼盒（12枚）", "price":88.00},
+				{"id":2,"img" : "/yigunet/img/201711091428172020.jpg", "title":"海南小青柠480g", "price":17.80},
+				{"id":3,"img" : "/yigunet/img/201711241718932003.jpg", "title":"湖南永州冰糖橙5kg", "price":88},
+				{"id":4,"img" : "/yigunet/img/201711211056647044.jpg", "title":"四川不知火丑柑6个装", "price":38.4}
 			]
 		},
 		{
 			"title" : "非橘子们",
 			"products" : [
-				{"id":1,"img" : "/img/20151118143469031.jpg", "title":"商品1", "price":110},
-				{"id":2,"img" : "/img/201703130926485041.jpg", "title":"商品2", "price":210},
-				{"id":3,"img" : "/img/201705261014543024.jpg", "title":"商品3", "price":310},
-				{"id":3,"img" : "/img/201705261014543024.jpg", "title":"商品3", "price":310}
+				{"id":5,"img" : "/yigunet/img/20151118143469031.jpg", "title":"山东金富士8个装", "price":39.8},
+				{"id":6,"img" : "/yigunet/img/201703130926485041.jpg", "title":"百香果2kg", "price":59.8},
+				{"id":7,"img" : "/yigunet/img/201711281038338040.jpg", "title":"精选红肉蜜柚2个装（小果）", "price":23.8},
+				{"id":8,"img" : "/yigunet/img/201705261014543024.jpg", "title":"临安野山核桃仁300g", "price":119.8}
 			]
 		},
 		{
 			"title" : "零食",
 			"products" : [
-				{"id":1,"img" : "/img/201705190825247027.jpg", "title":"商品1", "price":110},
-				{"id":2,"img" : "/img/201705190825247027.jpg", "title":"商品2", "price":210},
-				{"id":3,"img" : "/img/201705190825247027.jpg", "title":"商品3", "price":310},
-				{"id":3,"img" : "/img/201705190825247027.jpg", "title":"商品3", "price":310}
+				{"id":9,"img" : "/yigunet/img/201705190825247027.jpg", "title":"丽芝士纳宝帝奶酪味威化饼干350g", "price":1},
+				{"id":10,"img" : "/yigunet/img/201711091428875016.jpg", "title":"丽芝士纳宝帝奶酪味威化饼干350g", "price":1},
+				{"id":11,"img" : "/yigunet/img/201705190825247027.jpg", "title":"丽芝士纳宝帝奶酪味威化饼干350g", "price":1},
+				{"id":12,"img" : "/yigunet/img/201705190825247027.jpg", "title":"丽芝士纳宝帝奶酪味威化饼干350g", "price":1}
 			]
 		}
 	]

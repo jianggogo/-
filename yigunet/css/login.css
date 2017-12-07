@@ -23,6 +23,14 @@
 			background-color: rgba(139,140,144,.3);
 			padding: 0 40px;
 		}
+		#error{
+			width: 187px;
+			height: 33px;
+			position: absolute;
+			top: 448px;
+			left: 192px;
+			color: red;
+		}
 		.box h1{
 			width: 500px;
 			height: 97px;

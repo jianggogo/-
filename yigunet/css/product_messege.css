@@ -1,0 +1,129 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+html,body{
+	width: 100%;
+}
+
+.messege_main{
+	height: 700px;
+	background: #ffffff;
+	position: relative;
+}
+ .messege_main .banner{
+ 	width: 1262px;
+ 	margin: 0 auto;
+ 	height: 50px;
+ 	padding-left: 26px;
+ 	border-bottom: 1px solid red;
+
+ }
+ .messege_main .comform{
+ 	position: absolute;
+ 	width: 200px;
+ 	height: 30px;
+ 	bottom:335px;
+	right:80px;
+	border: 1px solid #ccc;
+	text-align: center;
+	line-height: 30px;
+	display: none;
+ }
+ .messege_main .banner ul{
+ 	width: 320px;
+ 	height: 50px;
+ }
+ .messege_main .banner ul li{
+ float: left;
+ width: 160px;
+ height: 50px;
+ color: #fd7400;
+ font-size: 20px;
+ text-align: center;
+ line-height: 50px;
+ }
+ .messege_main .banner ul li:hover{
+ 	background: #fd7400;
+ 	color: white;
+ }
+ .messege_main .banner ul li:hover a{
+ 	color: white;
+ }
+ .messege_main .banner ul li a{
+ 	color:#fd7400;
+ }
+ 
+.fangDaJ{
+	width: 1100px;
+	padding-left: 26px;
+	height:476px ;
+	margin: 0 auto;
+}
+.fangDaJ .zhongTU{
+	width: 476px;
+	height: 476px;
+	float: left;
+	border: 1px solid #ccc;
+	margin-right: 26px;
+}
+#img{
+	width: 476px;
+	height: 476px;
+}
+.fangDaJ .messege{
+	float: left;
+	width: 531px;
+	height: 476px;
+}
+.fangDaJ .messege .title{
+	width: 531px;
+	height: 64px;
+	color: black;
+	font-size: 24px;
+}
+.fangDaJ .messege .price{
+	width: 531px;
+	height: 78px;
+	font-size: 25px;
+	color: #fd7400;
+	background: #fdf8f4;
+}
+.fangDaJ .messege .tiShi{
+	width: 531px;
+	height: 105px;
+	padding-left: 10px;
+}
+.fangDaJ .messege .tiShi ul{
+	width: 531px;
+	height: 105px;
+	font-size: 12px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.fangDaJ .messege .tiShi span{
+	width: 33px;
+	height: 31px;
+	background: #fd7400;
+	color:white;
+}
+.fangDaJ .messege .add_cart{
+	width: 180px;
+	height: 46px;
+	cursor: pointer;
+	color: white;
+	background: #fd7400;
+	text-align: center;
+	line-height: 46px;
+	border-radius: 5px;
+	margin: 30px auto;
+}

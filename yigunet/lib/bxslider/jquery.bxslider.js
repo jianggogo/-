@@ -9,6 +9,8 @@
  */
 
 ;(function($){
+	
+	console.log("in bxslider")
 
 	var plugin = {};
 

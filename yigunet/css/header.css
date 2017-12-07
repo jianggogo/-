@@ -34,7 +34,7 @@
 				height: 27px;
 				padding-left: 20px;
 				color: #333333;
-				background: url(../../img/shoucang.png) no-repeat 9px 3px;
+				background: url(/yigunet/img/shoucang.png) no-repeat 9px 3px;
 			}
 			.header_1 .box ul{
 				width: 306px;
@@ -42,7 +42,7 @@
 				display: flex;
 				align-items: center;
 				justify-content: space-around;
-				background: url(../../img/ewm.png) no-repeat 218px 11px;
+				background: url(/yigunet/img/ewm.png) no-repeat 218px 11px;
 			}
 			.header_1 .box ul li a{
 				font-size: 12px;
@@ -71,7 +71,7 @@
 				display: block;
 				width: 210px;
 				height: 72px;
-				background: url(../../img/logo.png);
+				background: url(/yigunet/img/logo.png);
 				background-size:  100% 100%;
 			}
 			.header_2 .box h1 a span{
@@ -109,27 +109,28 @@
 				z-index:99;
 				background: white;
 			}
-			.cart{
+			.header_2 .cart{
 				width: 165px;
 				height: 34px;
 				float: right;
 				border: 1px solid #f0c4a1;
 				margin-top: 15px;
 				background: #ffffff;
+				cursor: pointer;
 			}
-			.cart a{
+			.header_2 .cart a{
 				display: block;
 				float: left;
 				width: 50px;
 				height: 34px;
-				background: url(../../img/header-img.png) no-repeat -106px 8px;
+				background: url(/yigunet/img/header-img.png) no-repeat -106px 8px;
 			}
-			.cart span{
+			.header_2 .cart span{
 				display: block;
 				float: right;
 				width: 93px;
 				height: 33px;
 				font-size: 12px;
 				line-height: 33px;
-				background: url(../../img/list-arrow.png) no-repeat 70px 10px;
+				background: url(/yigunet/img/list-arrow.png) no-repeat 70px 10px;
 			}

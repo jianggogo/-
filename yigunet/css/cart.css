@@ -1,0 +1,152 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,body{
+	width: 100%;
+}
+
+
+.main{
+	width: 100%;
+	background: #ffffff;
+	
+	margin-bottom: 20px;
+}
+.main .goHome{
+	font-size: 12px;
+	color: white;
+	width: 100px;
+	height: 20px;
+	margin-left: 20px;
+	background: #fd7400;
+	cursor: pointer;
+	text-align: center;
+}
+.main .cart{
+	width: 1261px;
+	margin: 0 auto;
+}
+.main .cart .header_title{
+	width: 100%;
+	height: 47px;
+	overflow: hidden;
+	line-height: 47px;
+}
+.main .cart .header_title div{
+	float: left;
+}
+.main .cart .header_title .ck{
+	width: 670px;
+	height: 47px;
+	padding-left: 40px;
+}
+.main .cart .header_title .price{
+	width: 120px;
+}
+.main .cart .header_title .amount{
+	width: 130px;
+}
+.main .cart .header_title .sub{
+	
+	width: 140px;
+}
+.main .cart_body{
+	width: 100%;
+	padding: 0 20px;
+}
+.main .cart_body .row{
+	width: 1215px;
+	height: 110px;
+	border-top:1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+}
+.main .cart_body .row div{
+	float: left;
+}
+.main .cart_body .row .ck{
+	width: 63px;
+	height: 101px;
+	text-align: center;
+	line-height: 101px;
+}
+.main .cart_body .row .img{
+	width: 86px;
+	height: 86px;
+	border: 1px solid #ccc;
+	margin-top: 5px;
+	margin-right:20px;
+}
+
+.main .cart_body .row .img img{
+	width: 84px;
+	height: 84px;
+}
+.main .cart_body .row .title{
+	width: 200px;
+	height: 101px;
+	text-align: center;
+	line-height: 101px;
+	font-size: 13px;
+	margin-right: 250px;
+}
+.main .cart_body .row .price{
+	width: 100px;
+	height: 101px;
+	text-align: center;
+	line-height: 101px;
+	color: #ff0000;
+	margin-right: 20px;
+}
+.main .cart_body .row .amount{
+	width: 100px;
+	height: 101px;
+	font-size: 13px;
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+	justify-content: space-around;
+}
+.cart_body .row .minus,.cart_body .row .add {
+			width:20px;
+			height: 25px;
+			border: 1px solid;
+			display:inline-block;
+			text-align: center;
+			cursor: pointer;
+		}
+.main .cart_body .row .sub,.main .cart_body .row .oper{
+	width: 140px;
+	height: 101px;
+	line-height: 101px;
+	text-align: center;
+}
+.main .cart_body .row .oper a{
+	color: black;
+}
+.main .cart_body .row .oper a:hover{
+	color: greenyellow;
+}
+.main .foot{
+	width: 1261px;
+	height: 100px;
+	background: #fdf3eb;
+	padding-left: 800px;
+}
+.main .foot span{
+	display: inline-block;
+	float: left;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	line-height: 90px;
+}
+.main .foot span:nth-child(3){
+	background: #fd7400;
+	cursor: pointer;
+	font-size: 25px;
+	color: white;
+	font-weight: 600;
+}

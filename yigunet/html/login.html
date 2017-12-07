@@ -9,8 +9,11 @@
 		
 		
 	<div class="box">
+		<div id="error">
+			
+		</div>
 		<h1>
-			<a href="">
+			<a href="/yigunet/index.html">
 				<span>依谷依谷</span>		
 			</a>
 		</h1>
@@ -26,11 +29,11 @@
 		<div class="p2">
 			<div class="in">
 				<span class="sp3"></span>
-				<input type="text" name="" id="" value="" placeholder="  用户名/手机号" />
+				<input type="text" name="" id="username" value="" placeholder="  用户名/手机号" />
 			</div>
 			<div class="passwd">
 				<span class="sp4"></span>
-				<input type="password" name="" id="" value="" placeholder="  密码" />
+				<input type="password" name="" id="password" value="" placeholder="  密码" />
 			</div>
 		</div>
 		<div class="p3">
@@ -47,6 +50,26 @@
 	</div>
 	
 	<script src="../lib/jquery/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="/js/login.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/yigunet/js/login.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/yigunet/lib/jquery_plugins/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$("#btn").on("click",function(){
+			$.post(
+				"/yigunet/php/login.php", 
+				{username:$("#username").val(),password:$("#password").val()},
+				function(respData){
+					if (respData.status === 1 && $("#pandu").text()==="正确") {
+						// 登录成功，将登录成功用户数据保存到 cookie 中
+						var user = respData.data;
+						$.cookie("login_user", JSON.stringify(user), {path:"/"});
+						// 跳转到主页
+						location = "/yigunet/index.html";
+					} else {
+						$("#error").text("*用户名或密码错误!!");
+					}
+				},
+				"json");
+		})
+	</script>
 	</body>
 </html>

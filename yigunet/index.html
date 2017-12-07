@@ -12,7 +12,9 @@
 		<div class="header">
 			
 		</div>
-		
+		<div id="success_cart">
+					已成功添加到购物车
+				</div>
 		<div class="banner">
 			<div class="box">
 				<div class="slider1">
@@ -251,17 +253,18 @@
 		
 	
 			
-		<script src="lib/requirejs/require.js" data-main="/js/index"></script>
+		<script src="/yigunet/lib/requirejs/require.js" data-main="/yigunet/js/index"></script>
 		<script type="text/html" id="floor_template">
 		{{each floors as floor}}
 		<div class="floor">
 			<h4>{{floor.title}}</h4>
 			{{each floor.products as product}}
 				<div class="product">
-					<input type="hidden" name="" id="" value="{{product.id}}" />
+					<input type="hidden" name="" id="" class="id" value="{{product.id}}" />
 					<div class="img"><img src="{{product.img}}"/></div>
-					<div class="title">标题：{{product.title}}</div>
+					<div class="title">{{product.title}}</div>
 					<div class="price">￥：{{product.price}}</div>
+					<div class="add_cart">加入购物车</div>
 				</div>
 			{{/each}}
 		</div>
